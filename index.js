@@ -5,12 +5,12 @@ const user_response = parseInt(readLineSync.question('Welcome to Unit Converter.
 console.log(`You selected ${user_response}`);
 logic(user_response);
 
- function metertokilometer(meter)
+ function meterToKilometer(meter)
 {
   return meter/1000;
 }
 
-function foottocentimeter(foot)
+function footToCentimeter(foot)
 {
   return foot*30.48;
 }
@@ -20,13 +20,13 @@ function logic(user_response)
   if(user_response===1)
   {
     const meter =parseInt(readLineSync.question('Please enter your input in meters\n'));
-    console.log(metertokilometer(meter));
+    console.log(meterToKilometer(meter));
   }
  
  else if(user_response===2)
   {
     const foot =parseInt(readLineSync.question('Please enter your input in foot\n'));
-    console.log(foottocentimeter(foot));
+    console.log(footToCentimeter(foot));
   }
 
   else
