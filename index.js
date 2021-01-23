@@ -17,16 +17,16 @@ function footToCentimeter(foot)
 switch(userResponse)
 {
    case 1:
-   const meter = parseInt(readLineSync.question('Please enter your input in meters\n'));
-   console.log(meterToKilometer(meter));
-   break;
+     const meter = parseInt(readLineSync.question('Please enter your input in meters\n'));
+     console.log(meterToKilometer(meter));
+     break;
  
    case 2:
-   const foot = parseInt(readLineSync.question('Please enter your input in foot\n'));
-   console.log(footToCentimeter(foot));
-   break;
+     const foot = parseInt(readLineSync.question('Please enter your input in foot\n'));
+     console.log(footToCentimeter(foot));
+     break;
 
    default:
-   console.log('Invalid Option');
-   break;
+     console.log('Invalid Option');
+     break;
 }
